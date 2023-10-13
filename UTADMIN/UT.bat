@@ -53,18 +53,11 @@ if %MAINSELECT%==5 goto IAUSR
 if %MAINSELECT%==6 goto ADGRP
 if %MAINSELECT%==7 goto EXITUT
 if %MAINSELECT%==8 start lusrmgr.msc
-if %MAINSELECT%==China goto CHINA
 goto EXIT
 : EXIT
 echo Press any key(like space)to go to MAIN SELECT.
 pause>nul
 goto MAIN
-: CHINA
-CLS
-color 46
-echo Please see the followings.
-start China.ttf
-goto EXIT
 : ADUSR
 set /p ADSELECT=Enter your choice(1=ADD,2=DEL):
 if %ADSELECT%==1 goto ADAUSRUN
